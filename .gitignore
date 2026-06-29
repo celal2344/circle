@@ -1,0 +1,34 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+build/
+.next/
+.expo/
+.turbo/
+coverage/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Obsidian local state
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache/
+.obsidian/plugins/
+.obsidian/plugins/*
+.obsidian/community-plugins.json
+.trash/
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Local agent state
+.claude/
+.claudian/
