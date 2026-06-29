@@ -28,7 +28,8 @@ shared/
 - Next.js App Router for the Admin web app.
 - Supabase for Auth, Postgres, RLS, Edge Functions/RPC, generated DB types, and backend operations.
 - Zod for app-facing domain schemas.
-- Turborepo-style package tasks when code is scaffolded.
+- Turborepo for monorepo task orchestration.
+- shadcn/ui, TanStack Table, and React Hook Form for Admin UI CRUD surfaces.
 
 ## Auth
 
@@ -55,6 +56,16 @@ shared/
 `shared/domain` contains curated Zod schemas and inferred TypeScript types for app-facing contracts.
 
 Mobile and web apps import domain types from `shared/` and must not create parallel local domain types.
+
+## Web Feature Architecture
+
+Next.js route files stay thin. Files under `web/app/**/page.tsx` should delegate to feature components and should not contain large UI components, CRUD panels, table definitions, or form logic.
+
+Feature-owned UI lives under `web/features/<feature>/`. Shared generic UI lives under `web/components/ui/`; shared app-level components live under `web/components/`.
+
+CRUD tables use a shared TanStack/shadcn wrapper at `web/components/data/data-table.tsx`. CRUD forms use React Hook Form, shadcn Field components, and Zod schemas from `shared/domain`.
+
+The MVP does not need a translation system. Turkish labels and validation messages can live directly in UI copy and `shared/domain` schemas until localization becomes a real requirement.
 
 ## Data Model
 
@@ -107,4 +118,4 @@ Simple reads and low-risk writes can use Supabase clients directly, wrapped by s
 - Use pilot-private visibility by default.
 - Re-check current Supabase docs before implementation.
 
-Related: [[docs/adr/0001-monorepo-shape]], [[docs/adr/0002-supabase-backend-first]], [[docs/adr/0003-shared-zod-domain-types]], [[docs/mvp-scope]]
+Related: [[docs/adr/0001-monorepo-shape]], [[docs/adr/0002-supabase-backend-first]], [[docs/adr/0003-shared-zod-domain-types]], [[docs/adr/0004-turborepo-build-system]], [[docs/adr/0005-web-feature-architecture]], [[docs/conventions]], [[docs/mvp-scope]]

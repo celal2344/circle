@@ -11,11 +11,13 @@ Core work:
 - Maintain MVP scope, architecture, roadmap, build log, and ADRs under `docs/`.
 - Initialize repo and monorepo tooling when moving from docs to code.
 - Establish `shared/` as the domain type source.
+- Establish Turborepo task orchestration and package boundaries.
 
 Acceptance:
 
 - A future agent can understand product scope, terms, architecture, and decisions from docs alone.
 - ADRs explain the initial monorepo, Supabase, and shared type decisions.
+- Engineering conventions explain web feature structure, UI patterns, and git workflow.
 
 ## Phase 2 - Auth And Profiles
 
