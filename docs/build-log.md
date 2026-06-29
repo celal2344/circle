@@ -18,11 +18,14 @@ Decisions captured:
 - Pre-Flow is the only v1 feed.
 - Supabase is the backend boundary for the MVP.
 - `shared/` owns generated DB types, Zod schemas, and inferred domain types.
+- `main` is reserved for Vercel/Supabase-connected deployment state.
+- Day-to-day development continues on `dev`.
 
 Next actions:
 
 - Scaffold the repo only after the docs pack is accepted.
 - Initialize git and monorepo tooling when moving to implementation.
+- Create and push the `dev` branch from the latest `main`.
 - Re-check Supabase docs and pricing before building auth/schema.
 
 Related: [[docs/index]], [[docs/roadmap]], [[docs/architecture]]

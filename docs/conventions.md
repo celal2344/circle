@@ -42,6 +42,10 @@
 
 ## Git Workflow
 
+- `main` is the deployment-connected branch.
+- Vercel and Supabase production integrations should track `main`.
+- Day-to-day development happens on `dev`.
+- Merge `dev` into `main` only after the relevant checks pass and the release is intentional.
 - Commit consistently as work progresses.
 - Prefer small commits after each coherent, verified change.
 - Push commits regularly when the remote is configured and network access is available.
