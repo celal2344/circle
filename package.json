@@ -1,0 +1,23 @@
+{
+  "name": "circle",
+  "private": true,
+  "version": "0.1.0",
+  "packageManager": "npm@11.17.0",
+  "workspaces": [
+    "mobile",
+    "web",
+    "shared",
+    "supabase"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "test": "turbo run test",
+    "typecheck": "turbo run typecheck"
+  },
+  "devDependencies": {
+    "turbo": "2.10.0",
+    "typescript": "6.0.3"
+  }
+}

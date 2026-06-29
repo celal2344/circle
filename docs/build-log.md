@@ -29,3 +29,21 @@ Next actions:
 - Re-check Supabase docs and pricing before building auth/schema.
 
 Related: [[docs/index]], [[docs/roadmap]], [[docs/architecture]]
+
+## 2026-06-29 - Monorepo Scaffold
+
+Created the initial development branch and scaffolded the npm workspace/Turborepo monorepo:
+
+- `web/` Next.js Admin shell with thin `app/page.tsx` delegating to `web/features/home`.
+- `mobile/` Expo shell with Turkish MVP placeholder copy.
+- `shared/` package with initial Zod domain schemas and database type placeholder.
+- `supabase/` workspace with config, migrations/functions/seed placeholders, and a scaffold check script.
+- Root workspace scripts delegate to `turbo run`.
+
+Verified:
+
+- `npm run lint`
+- `npm run typecheck`
+- `npm run build`
+
+Related: [[docs/architecture]], [[docs/conventions]], [[docs/adr/0004-turborepo-build-system]]

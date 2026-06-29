@@ -1,0 +1,15 @@
+{
+  "extends": "../tsconfig.base.json",
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "lib": ["esnext"],
+    "module": "esnext",
+    "paths": {
+      "@circle/shared": ["../shared/src/index.ts"],
+      "@circle/shared/*": ["../shared/src/*"]
+    },
+    "target": "ES2022",
+    "types": ["react"]
+  },
+  "include": ["App.tsx", "**/*.ts", "**/*.tsx"]
+}

@@ -8,11 +8,16 @@ build/
 .expo/
 .turbo/
 coverage/
+*.tsbuildinfo
 
 # Environment files
 .env
 .env.*
 !.env.example
+
+# Deployment/local service state
+.vercel/
+.supabase/
 
 # Obsidian local state
 .obsidian/workspace.json
@@ -21,6 +26,9 @@ coverage/
 .obsidian/plugins/
 .obsidian/plugins/*
 .obsidian/community-plugins.json
+docs/.obsidian/
+docs/Untitled.canvas
+docs/[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9].md
 .trash/
 
 # OS/editor noise

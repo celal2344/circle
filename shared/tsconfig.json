@@ -1,0 +1,10 @@
+{
+  "extends": "../tsconfig.base.json",
+  "compilerOptions": {
+    "declaration": true,
+    "lib": ["esnext"],
+    "module": "esnext",
+    "target": "ES2022"
+  },
+  "include": ["src/**/*.ts"]
+}
