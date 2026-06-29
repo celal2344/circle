@@ -8,7 +8,7 @@ The planned monorepo shape is:
 docs/
 mobile/
 web/
-api/
+supabase/
 shared/
 ```
 
@@ -18,7 +18,7 @@ shared/
 
 `web/` will hold the Next.js Admin panel for Organizer approvals, İşletme pilot access, operational visibility, and trust review.
 
-`api/` is the Supabase backend boundary. It should contain migrations, Edge Functions, seed scripts, backend docs, and integration notes. It is not a custom Node API at MVP.
+`supabase/` is the backend boundary. It should contain Supabase migrations, Edge Functions, RPC, seed scripts, generated backend assets, backend docs, and integration notes. It is not a custom Node API at MVP.
 
 `shared/` is the only source for domain schemas and TypeScript domain types.
 

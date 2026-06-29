@@ -21,7 +21,7 @@ Circle is a mobile-first event and entertainment marketplace for Istanbul's earl
 
 - First implementation pass is docs-first.
 - MVP proves the booking loop, not a full social network.
-- Code will later be organized as `docs/`, `mobile/`, `web/`, `api/`, and `shared/`.
+- Code will later be organized as `docs/`, `mobile/`, `web/`, `supabase/`, and `shared/`.
 - Supabase is the initial backend boundary.
 - `shared/` owns generated database types, Zod schemas, and inferred TypeScript domain types.
 
