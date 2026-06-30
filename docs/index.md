@@ -10,6 +10,7 @@ Circle is a mobile-first event and entertainment marketplace for Istanbul's earl
 - [[docs/roadmap|Roadmap]]
 - [[docs/build-log|Build Log]]
 - [[docs/skills|Agent Skills]]
+- [[docs/supabase-setup|Supabase Setup]]
 - [[CONTEXT|Domain Glossary]]
 
 ## Decisions
@@ -31,4 +32,4 @@ Circle is a mobile-first event and entertainment marketplace for Istanbul's earl
 - `shared/` owns generated database types, Zod schemas, and inferred TypeScript domain types.
 - The product UI can use Turkish copy directly for now; no translation system is required in the MVP.
 
-Related: [[docs/prd]], [[docs/mvp-scope]], [[docs/architecture]], [[docs/roadmap]], [[docs/conventions]], [[docs/skills]], [[CONTEXT]]
+Related: [[docs/prd]], [[docs/mvp-scope]], [[docs/architecture]], [[docs/roadmap]], [[docs/conventions]], [[docs/skills]], [[docs/supabase-setup]], [[CONTEXT]]

@@ -47,3 +47,18 @@ Verified:
 - `npm run build`
 
 Related: [[docs/architecture]], [[docs/conventions]], [[docs/adr/0004-turborepo-build-system]]
+
+## 2026-06-30 - Supabase Project Config
+
+Recorded the target Supabase project ref and URL without committing secrets.
+
+- Project ref: `dklkhoryoplyrzoepbxs`
+- Project URL: `https://dklkhoryoplyrzoepbxs.supabase.co`
+- Added env examples for `web/`, `mobile/`, and `supabase/`.
+- Added Supabase client helpers for web and mobile.
+- Added [[docs/supabase-setup]] with MCP verification notes.
+
+Blocked before migrations:
+
+- Supabase MCP is currently targeting a different project URL.
+- Do not apply migrations until MCP confirms project ref `dklkhoryoplyrzoepbxs`.
