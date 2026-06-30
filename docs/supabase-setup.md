@@ -4,6 +4,7 @@
 
 - Project URL: `https://dklkhoryoplyrzoepbxs.supabase.co`
 - Project ref: `dklkhoryoplyrzoepbxs`
+- Publishable key: `sb_publishable_qrzWCB4VfNR44oeE3ytFyA_gMs1-kho`
 
 ## Local Environment
 
@@ -19,22 +20,26 @@ The database password and connection string are local secrets. Keep them in igno
 
 ## MCP Status
 
-The Supabase MCP must be authenticated against project ref `dklkhoryoplyrzoepbxs` before using it for schema inspection, advisors, migrations, or publishable key lookup.
+MCP is authenticated against project ref `dklkhoryoplyrzoepbxs`.
 
-During initial setup, the MCP returned a different project URL:
+Verified on 2026-06-30:
 
-- `https://rlrchmplublpckfqcqcm.supabase.co`
+- MCP project URL matches `https://dklkhoryoplyrzoepbxs.supabase.co`.
+- MCP returned an active modern publishable key.
+- Public schema has no tables yet.
+- No migrations are applied yet.
+- Security advisors are clean.
+- Performance advisors are clean.
 
-Do not apply migrations through MCP until the MCP project target matches `dklkhoryoplyrzoepbxs`.
+During initial setup, the MCP returned a different project URL, but that is now resolved.
 
 ## Next Checks
 
-After MCP is pointed at the correct project:
+Before every schema change:
 
-1. Fetch the project URL from MCP and confirm it matches this note.
-2. Fetch the active publishable key from MCP.
-3. List existing public tables.
-4. Run security and performance advisors.
-5. Only then create the first auth/profile migration.
+1. List existing public tables.
+2. Apply changes as migrations, not one-off remote edits.
+3. Run security and performance advisors.
+4. Confirm all exposed tables have RLS enabled.
 
 Related: [[docs/architecture]], [[docs/roadmap]], [[docs/conventions]]

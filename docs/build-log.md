@@ -60,5 +60,6 @@ Recorded the target Supabase project ref and URL without committing secrets.
 
 Blocked before migrations:
 
-- Supabase MCP is currently targeting a different project URL.
-- Do not apply migrations until MCP confirms project ref `dklkhoryoplyrzoepbxs`.
+- Resolved: Supabase MCP now confirms project ref `dklkhoryoplyrzoepbxs`.
+- Public schema has no tables and no migrations yet.
+- Security and performance advisors are clean before the first schema migration.
